@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+div#root {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+
+h1 {
+  font-size: x-large;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+
+span {
+  color: rgb(117, 112, 112);
+  font-size: medium;
+}
+
+section.win {
+  background-color: rgb(33, 215, 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.language-bits {
+  padding-top: 3%;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+.word {
+  border-bottom: 1px solid #a3a3a3;
+  padding: 15px;
+  background-color: #2d2f36;
+  margin-right: 4px;
+  color: white;
+  font-size: large;
+}
+
+.keyboardDiv {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.keyboardDiv button:nth-last-child(6) {
+  grid-column-start: 3;
+}
+
+button {
+  background-color: #f1c61e;
+  color: black;
+  border-radius: 3px;
+  padding: 12px;
+  margin: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.spaceBar {
+  background-color: rgb(56, 171, 206);
+  margin-top: 2%;
+  width: 35%;
+  border: oldlace 1px solid;
+  border-radius: 5px;
+}
+
+.greenButton {
+  background-color: green;
+}
+
+.redButton {
+  background-color: red;
+}
+
+
+
+.lose{
+  background-color: red;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.status{
+  background-color: grey;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1px;
+  width: 50%;
+  border-radius: 10px;
+}
